@@ -337,6 +337,7 @@
 }
 
 
+/* responsive services */
 @media screen and (max-width: 500px) {
     .hm-services .hm-services__item{
         margin: 10rem 5rem;
