@@ -876,6 +876,130 @@
     
 }
 
+/* services */
+.services {
+    padding: 15rem 0 12rem 0;
+}
+
+.services .arrow{
+    text-align: center;
+    margin-top: 2rem;
+}
+.services .arrow i {
+    font-size: 4rem;
+    color: #ffa700;
+}
+.second .arrow{
+    text-align: center;
+    margin-top: 2rem;
+}
+.second .arrow i {
+    font-size: 4rem;
+    color: #ffa700;
+}
+
+.services .services__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5rem;
+    flex-direction: row-reverse;
+}
+.services .services__wrapper .services__text {
+    text-align: left;
+    max-width: 60rem;
+    margin-top: 5rem;
+}
+.services .services__wrapper .services__text h1 {
+    font-size: 5rem;
+    color: #ffa700;
+    font-weight: 800;
+}
+.services .services__wrapper .services__text p {
+    margin: 5rem 0;
+    text-align: justify;
+}
+.services .services__wrapper .services__text .price p{
+    margin: 0.5rem 0;
+}
+.services .services__wrapper .services__text .price p:nth-child(2){
+    color: #ffa700;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.services .services__wrapper .services__text .price p:last-child{
+    font-style: italic;
+    max-width: 22rem;
+    font-size: 1.5rem;
+}
+.photo{
+    position: relative;
+}
+.yellow{
+    position: absolute;
+    opacity: 0.3;
+}
+/* second */
+.second {
+    background: #2b2b2b;
+    padding: 5rem 0;
+}
+.second__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5rem;
+}
+.second .second__wrapper .services__text{
+    text-align: right;
+    max-width: 60rem;
+    margin-top: 5rem;
+}
+.second .second__wrapper .services__text h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #ffa700;
+    margin-bottom: 3rem;
+}
+.second .second__wrapper .services__text p {
+    text-align: justify;
+    color: #ffffff;
+    margin: 5rem 0;
+}
+.second .second__wrapper .services__text .price p{
+    margin: 0.5rem 0;
+}
+.second .second__wrapper .services__text .price p:nth-child(2){
+    color: #ffa700;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* responsive services*/
+
+@media screen and (max-width:500px) {
+    .services .services__wrapper, .second .second__wrapper{
+        display: block;
+    }
+    .second .second__wrapper .services__text h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .services .services__wrapper .services__text h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 /* repeatable pattern */
 
 .active {
@@ -925,3 +1049,6 @@
 .bb-1 {
     border-bottom: 1px solid #2b2b2b38;
 }
+
+
+/* try */
