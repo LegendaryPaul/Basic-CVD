@@ -142,7 +142,7 @@
     position: fixed;
     width: 100%;
     z-index: 999;
-    box-shadow: 0 0 1rem 0.2rem #222222;
+    
 }
 .header .branding {
     display: flex;
@@ -515,13 +515,14 @@
 .footer {
     background: #2b2b2b;
     color: hsl(0, 0%, 50%);
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .footer .footer__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 2rem 0;
 }
 .footer .footer__wrapper .socials{
     display: flex;
@@ -878,14 +879,26 @@
 
 /* services */
 .services {
-    padding: 15rem 0 12rem 0;
+    padding: 15rem 0 2rem 0;
+}
+.third {
+    padding: 2rem 0 7rem 0;
 }
 
 .services .arrow{
     text-align: center;
+}
+.third .arrow {
+    text-align: center;
     margin-top: 2rem;
 }
 .services .arrow i {
+    font-size: 4rem;
+    color: #ffa700;
+    
+    padding-bottom: 2rem;
+}
+.third .arrow i {
     font-size: 4rem;
     color: #ffa700;
 }
@@ -896,9 +909,18 @@
 .second .arrow i {
     font-size: 4rem;
     color: #ffa700;
+    
+    padding-bottom: 2rem;
 }
 
 .services .services__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5rem;
+    flex-direction: row-reverse;
+}
+.third .third__wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -910,7 +932,17 @@
     max-width: 60rem;
     margin-top: 5rem;
 }
+.third .third__wrapper .third__text {
+    text-align: left;
+    max-width: 60rem;
+    margin-top: 5rem;
+}
 .services .services__wrapper .services__text h1 {
+    font-size: 5rem;
+    color: #ffa700;
+    font-weight: 800;
+}
+.third .third__wrapper .third__text h1 {
     font-size: 5rem;
     color: #ffa700;
     font-weight: 800;
@@ -919,10 +951,22 @@
     margin: 5rem 0;
     text-align: justify;
 }
+.third .third__wrapper .third__text p {
+    margin: 5rem 0;
+    text-align: justify;
+}
 .services .services__wrapper .services__text .price p{
     margin: 0.5rem 0;
 }
+.third .third__wrapper .third__text .price p{
+    margin: 0.5rem 0;
+}
 .services .services__wrapper .services__text .price p:nth-child(2){
+    color: #ffa700;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.third .third__wrapper .third__text .price p:nth-child(2){
     color: #ffa700;
     font-size: 2rem;
     font-weight: 600;
@@ -932,17 +976,19 @@
     max-width: 22rem;
     font-size: 1.5rem;
 }
+.third .third__wrapper .third__text .price p:last-child{
+    font-style: italic;
+    max-width: 22rem;
+    font-size: 1.5rem;
+}
 .photo{
     position: relative;
 }
-.yellow{
-    position: absolute;
-    opacity: 0.3;
-}
+
 /* second */
 .second {
     background: #2b2b2b;
-    padding: 5rem 0;
+    padding: 5rem 0 2rem 0;
 }
 .second__wrapper{
     display: flex;
@@ -951,15 +997,17 @@
     margin: 0 5rem;
 }
 .second .second__wrapper .services__text{
-    text-align: right;
+    text-align: left;
     max-width: 60rem;
     margin-top: 5rem;
+    
 }
 .second .second__wrapper .services__text h1 {
     font-size: 5rem;
     font-weight: 800;
     color: #ffa700;
     margin-bottom: 3rem;
+    text-align: left;
 }
 .second .second__wrapper .services__text p {
     text-align: justify;
@@ -978,7 +1026,7 @@
 /* responsive services*/
 
 @media screen and (max-width:500px) {
-    .services .services__wrapper, .second .second__wrapper{
+    .services .services__wrapper, .second .second__wrapper, .third .third__wrapper{
         display: block;
     }
     .second .second__wrapper .services__text h1{
@@ -989,18 +1037,109 @@
         font-size: 3rem;
         text-align: center;
     }
+    .third .third__wrapper .third__text h1{
+        font-size: 3rem;
+        text-align: center;
+    }
 }
 
 
 
+/* Contacts */
+.contacts {
+    padding: 19.5rem 5rem 10rem 5rem;
+    background: #2b2b2b;
+    color: #ffffff;
+}
+.contacts .contacts__wrapper{
+    display: flex;
+    margin: 0 10rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts .contacts__title h1{
+    text-align: left;
+    font-size: 6rem;
+    color: #ffa700;
+    font-weight: 800;
+    margin-bottom: 10rem;
+}
+.contacts .contacts__wrapper .contacts__left p {
+    max-width: 80rem;
+    margin-top: -5rem;
+}
+.contacts .contacts__wrapper .contacts__left .contacts__icons table{
+    height: 20rem;
+    margin-top: 8rem;
+}
+.contacts .contacts__wrapper .contacts__left .contacts__icons table tr td i{
+    margin-right: 5rem;
+    font-size: 3rem;
+    color: #ffa700;
+}
 
+.contacts .contacts__wrapper .contacts__left .contacts__social__icons{
+    margin-top: 5rem;
+}
+.contacts .contacts__wrapper .contacts__left .contacts__social__icons ul {
+    display: flex;
+}
+.contacts .contacts__wrapper .contacts__left .contacts__social__icons ul li{
+    margin-right: 2rem;
+}
+.contacts .contacts__wrapper .contacts__left .contacts__social__icons ul li i {
+    font-size: 3rem;
+    color: #ffffff;
+}
 
+.contacts .contacts__wrapper .contacts__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem;
+    margin-top: 5rem;
+}
+.contacts .contacts__wrapper .contacts__form input {
+    height: 4rem;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+.contacts .contacts__wrapper .contacts__form input:nth-child(3){
+    padding-bottom: 15rem;
+}
+.contacts .contacts__wrapper .contacts__form .contacts__form__btn{
+    text-align: right;
+}
+.contacts .contacts__wrapper .contacts__form .contacts__form__btn button{
+    padding: 1.5rem 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
 
+@media screen and (max-width:500px) { 
+    .contacts {
+        padding: 12rem 5rem 5rem 5rem;
+    }
+    .contacts .contacts__wrapper{
+        display: block;
+        margin: 0 0;
+    }
+    .contacts .contacts__wrapper .contacts__left .contacts__title h1{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .contacts .contacts__wrapper .contacts__left p {
+        text-align: center;
+    }
+}   
 
 
 
 
 /* repeatable pattern */
+.box__shadow{
+    box-shadow: 0 0 1rem 0.2rem #222222;
+}
 
 .active {
     color: #ffa700 !important;
@@ -1048,6 +1187,9 @@
 
 .bb-1 {
     border-bottom: 1px solid #2b2b2b38;
+}
+.bt--light{
+    border-top: 1px solid grey;
 }
 
 
